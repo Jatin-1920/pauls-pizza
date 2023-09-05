@@ -1,0 +1,128 @@
+
+.contact-section{
+    width: 100%;
+    border: 2px solid var(--primary-clr);
+    border-top: none;
+    position: relative;
+}
+.contactsec{
+    max-width: 100%;
+}
+
+.contactsec-col{
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 100%;
+    height: 100%;
+}
+.contactsec-col>*{
+    flex: 1;
+}
+
+.img-contact{
+    border: 2px solid var(--primary-clr);
+}
+.img-contact>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.contact-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   max-width: 100%;
+    padding-block: 1rem;
+    padding-inline: 8rem;
+}
+.contact-header{
+    display: grid;
+    gap: 1rem;
+}
+.contact-header h1{
+    font-size: var(--brg-heading);
+    text-transform: uppercase;
+}
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.form >label{
+    font-size: var(--p-text);
+    font-weight: bold;
+    padding-left: 2px;
+}
+.form input,.form select,.form textarea{
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    max-width: 100%;
+    background: rgba(219, 217, 217, 0.425);
+    font-size: 1.25rem;
+    font-weight: bold;
+  letter-spacing: 1px;
+    color: rgb(5, 97, 59);
+    border: none;
+    outline: none;
+    border: 2px solid #f9f2f0;
+}
+.form >.select{
+    color: rgba(5, 97, 59, 0.567);
+}
+
+:is(.name,.select,.message,.number):focus-within,:is(.name,.select,.message,.number):hover{
+    border-color:  var(--primary-clr);
+}
+
+.form-button{
+    width: 40%;
+    position: relative;
+}
+
+.opening{
+    width: 100%;
+    border:2px solid var(--primary-clr);
+    border-top: none;
+}
+
+.opening-col{
+    display: flex;
+    width: 100%;
+}
+
+.opening-div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.opening-div:nth-child(2) {
+    border-inline: 2px solid var(--primary-clr );
+}
+
+.open-heading{
+    font-size: var(--h2-text);
+    font-weight: bold;
+    padding: 2rem;
+    border-bottom: 2px solid var(--primary-clr);
+    max-width: 100%;
+    word-spacing: .5rem;
+}
+
+.open-info{
+padding: 5rem 1rem;
+display: grid;
+gap: 5rem;
+}
+.open-info >h2{
+    font-size: var(--p-text);
+}
+.open-info>h1{
+    display: grid;
+    gap: .5rem;
+}
